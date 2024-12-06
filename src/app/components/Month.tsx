@@ -30,7 +30,7 @@ const Month: React.FC = () => {
     </div>
     <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-[30px]">
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] transition-transform duration-700 ease-in-out hover:scale-105 relative overflow-hidden rounded bg-neutral-100">
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width={34}
@@ -175,7 +175,7 @@ const Month: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] transition-transform duration-700 ease-in-out hover:scale-105 relative overflow-hidden rounded bg-neutral-100">
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width={34}
@@ -325,7 +325,7 @@ const Month: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] transition-transform duration-700 ease-in-out hover:scale-105 relative overflow-hidden rounded bg-neutral-100">
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width={34}
@@ -475,7 +475,7 @@ const Month: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] transition-transform duration-700 ease-in-out hover:scale-105 relative overflow-hidden rounded bg-neutral-100">
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width={34}

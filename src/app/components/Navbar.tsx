@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { Underline } from "lucide-react"
+import { Toggle } from "@/components/ui/toggle"
 
 
 
@@ -29,7 +31,7 @@ const Navbar = () => {
 
 
   return (
-<div className="w-[1440px] h-[334px]">
+<div className="w-full h-[334px]">
   <div className="w-[1440px] h-12 absolute left-0 top-0 overflow-hidden bg-black">
     <div className="flex justify-start items-start absolute left-[445px] top-3 gap-[231px]">
       <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2">
@@ -66,11 +68,13 @@ const Navbar = () => {
       <div className="flex-grow-0 flex-shrink-0 w-[118px] h-6 relative">
         <p className="absolute left-0 top-0 text-2xl font-bold text-left text-black">Exclusive</p>
       </div>
+      
       <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-12">
         <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative">
+        <Toggle aria-label="Toggle underline" disabled>
         <Link href="/">
           <p className="flex-grow-0 flex-shrink-0 text-base text-center text-black">Home</p>
-          </Link>
+          </Link></Toggle>
           <svg
             width="48"
             height="1"
@@ -83,27 +87,37 @@ const Navbar = () => {
             <g opacity="0.5"><line y1="0.5" x2="48" y2="0.5" stroke="black"></line></g>
           </svg>
         </div>
+        
         <div className="flex-grow-0 flex-shrink-0 w-[66px] h-6 relative">
+        <Toggle aria-label="Toggle underline" disabled>
         <Link href="/Contact">
           <p className="absolute left-0 top-0 text-base text-center text-black">Contact</p>
           </Link>
+          </Toggle>
         </div>
         <div className="flex-grow-0 flex-shrink-0 w-12 h-6 relative">
+        <Toggle aria-label="Toggle underline" disabled>
         <Link href="/About">
           <p className="absolute left-0 top-0 text-base text-center text-black">About</p>
           </Link>
+          </Toggle>
         </div>
         <div className="flex-grow-0 flex-shrink-0 w-[61px] h-6 relative">
+        <Toggle aria-label="Toggle underline" disabled>
         <Link href="/Signup">
           <p className="absolute left-0 top-0 text-base text-center text-black">Sign Up</p>
           </Link>
+          </Toggle>
         </div>
       </div>
     </div>
+    
     <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 gap-6">
       <div
         className="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 gap-2.5 pl-5 pr-3 py-[7px] rounded bg-neutral-100"
       >
+        
+        
 
 
 

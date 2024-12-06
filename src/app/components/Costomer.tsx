@@ -4,7 +4,7 @@ export const Costomer = () => {
   return (
     <div className="w-[943px] h-[161px]">
   <div className="flex justify-center items-center absolute left-[249px] top-[5161px] gap-[88px]">
-    <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-6">
+    <div className="flex flex-col justify-start items-center flex-grow-0 transition-transform duration-700 ease-in-out hover:scale-105 flex-shrink-0 relative gap-6">
       <svg
         width={81}
         height={80}
@@ -20,7 +20,7 @@ export const Costomer = () => {
           fill="#2F2E30"
         />
         <circle cx="40.5" cy={40} r={29} fill="black" />
-        <g clip-path="url(#clip0_34802_331)">
+        <g clipPath="url(#clip0_34802_331)">
           <path
             d="M32.1667 51.6667C34.0076 51.6667 35.5 50.1743 35.5 48.3333C35.5 46.4924 34.0076 45 32.1667 45C30.3257 45 28.8333 46.4924 28.8333 48.3333C28.8333 50.1743 30.3257 51.6667 32.1667 51.6667Z"
             stroke="#FAFAFA"
@@ -86,7 +86,10 @@ export const Costomer = () => {
         </p>
       </div>
     </div>
-    <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[262px] relative gap-6">
+
+
+
+    <div className="flex flex-col justify-start items-center transition-transform duration-700 ease-in-out hover:scale-105 flex-grow-0 flex-shrink-0 w-[262px] relative gap-6">
       <svg
         width={80}
         height={80}
@@ -102,7 +105,7 @@ export const Costomer = () => {
           fill="#2F2E30"
         />
         <circle cx={40} cy={40} r={29} fill="black" />
-        <g clip-path="url(#clip0_34802_348)">
+        <g clipPath="url(#clip0_34802_348)">
           <path
             d="M33.3334 44.9998C33.3334 43.1589 31.841 41.6665 30 41.6665C28.1591 41.6665 26.6667 43.1589 26.6667 44.9998V48.3332C26.6667 50.1741 28.1591 51.6665 30 51.6665C31.841 51.6665 33.3334 50.1741 33.3334 48.3332V44.9998Z"
             stroke="white"
@@ -147,7 +150,13 @@ export const Costomer = () => {
         </p>
       </div>
     </div>
-    <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-6">
+
+
+
+
+
+
+    <div className="flex flex-col justify-start items-center transition-transform duration-700 ease-in-out hover:scale-105 flex-grow-0 flex-shrink-0 relative gap-6">
       <svg
         width={80}
         height={80}

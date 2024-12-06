@@ -2,37 +2,44 @@ import React from "react";
 
 const Music: React.FC = () => {
   return (
-    <div className="mt-48">
+    <div className="w-[1170px] h-[500px]">
+  <div className="w-[1170px] h-[500px] absolute left-[135px] top-[2526px] overflow-hidden bg-black">
+  <svg
+  width="818"
+  height="500"
+  viewBox="0 0 818 500"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="opacity-30"
+  preserveAspectRatio="xMidYMid meet"
+>
 
-    <div className="w-[1170px] h-[500px] left-[135px] relative overflow-hidden bg-black">
-    <svg
-      width="818"
-      height="500"
-      viewBox="0 0 818 500"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute left-[551px] top-[-1px] opacity-30"
-      preserveAspectRatio="xMidYMid meet"
+
+  <g opacity="0.3" filter="url(#filter0_f_79_1203)">
+    <ellipse cx="452" cy="250" rx="400" ry="250" fill="#D9D9D9"></ellipse>
+  </g>
+  <defs>
+    <filter
+      id="filter0_f_79_1203"
+      x="0"
+      y="-200"
+      width="904"
+      height="900"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
     >
-      <g opacity="0.3" filter="url(#filter0_f_79_1203)">
-        <ellipse cx="452" cy="250" rx="252" ry="250" fill="#D9D9D9"></ellipse>
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_79_1203"
-          x="0"
-          y="-200"
-          width="904"
-          height="900"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-          <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_79_1203"></feGaussianBlur>
-        </filter>
-      </defs>
-    </svg>
+      <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_79_1203"></feGaussianBlur>
+    </filter>
+  </defs>
+</svg>
+<div className="w-[600px] h-[420px] overflow-hidden">
+    <img
+    src="images/Music.png"
+    className="w-[568px] h-[330px] absolute left-[533px] top-20 object-none"
+  />
+</div>
     <p
       className="w-[443px] absolute left-14 top-[121px] text-5xl font-semibold text-left text-neutral-50"
     >
@@ -126,15 +133,9 @@ const Music: React.FC = () => {
     <p className="absolute left-14 top-[69px] text-base font-semibold text-left text-[#0f6]">
       Categories
     </p>
-    <div className="w-[600px] h-[420px] absolute left-[526px] top-[37px]">
-      <img
-        src="images/Music.png"
-        className="w-[568px] h-[330px] absolute left-[584px] top-[45px] "
-      />
-    </div>
+   
   </div>
-  </div>
-
+</div>
     );
 };
 

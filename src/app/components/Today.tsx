@@ -2,9 +2,19 @@ import React from "react";
 import Link from 'next/link';
 
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
+
 const Today: React.FC = () => {
   return (
-    <div className="w-[1308px] h-[609px]">
+    <div className="w-[1440px] h-[609px]">
   <div
     className="flex justify-center items-center absolute left-[603px] top-[1219px] gap-2.5 px-12 py-4 rounded bg-[#db4444]"
   >
@@ -16,6 +26,9 @@ const Today: React.FC = () => {
   </div>
   <div className="flex flex-col justify-start items-start absolute left-[135px] top-[666px] gap-10">
     <div className="flex justify-start items-end flex-grow-0 flex-shrink-0 gap-[470px]">
+
+
+
       <div className="flex justify-start items-end flex-grow-0 flex-shrink-0 relative gap-[87px]">
         <div
           className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[103px] relative gap-6"
@@ -71,6 +84,17 @@ const Today: React.FC = () => {
             </p>
             <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-black">56</p>
           </div>
+
+
+
+
+
+
+          
+
+
+
+
           <div
             className="flex flex-col justify-start items-start absolute left-[63px] top-[26px] gap-2"
           >
@@ -148,54 +172,46 @@ const Today: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
-        <svg
-          width="46"
-          height="46"
-          viewBox="0 0 46 46"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="flex-grow-0 flex-shrink-0 w-[46px] h-[46px] relative"
-          preserveAspectRatio="none"
-        >
-          <circle cx="23" cy="23" r="23" fill="#F5F5F5"></circle>
-          <path
-            d="M22 16L15 23L22 30M15 23H31"
-            stroke="black"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></path></svg
-        ><svg
-          width="46"
-          height="46"
-          viewBox="0 0 46 46"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="flex-grow-0 flex-shrink-0 w-[46px] h-[46px] relative"
-          preserveAspectRatio="none"
-        >
-          <circle cx="23" cy="23" r="23" fill="#F5F5F5"></circle>
-          <path
-            d="M14.5 23H31M31 23L24 16M31 23L24 30"
-            stroke="black"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></path>
-        </svg>
       </div>
-    </div>
-    <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 w-[1308px] gap-[30px]">
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      
+      
+
+
+
+
+      
+
+
+      
+      
+      
+
+      
+
+      
+      <Carousel> 
+      <CarouselContent>
+
+  
+      <CarouselItem className="flex basis-1/4 justify-start items-start flex-grow flex-shrink w-0.5 gap-[30px]">
+    
+      <div className="flex basis-1/4 flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
         <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
           >
             <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-40%</p>
           </div>
+          <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width="34"
@@ -213,8 +229,7 @@ const Today: React.FC = () => {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path></svg
-            ><svg
+              ></path></svg><svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
@@ -239,16 +254,20 @@ const Today: React.FC = () => {
                 strokeLinejoin="round"
               ></path>
             </svg>
-          </div>
+        </div>
+        
+          
           <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
             <img
               src="images/i.png"
               className="w-[172px] h-[152px] absolute left-2 top-[13px] object-none"
             />
-          </div>
+        
         </div>
+        </div>
+
         <div
-          className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2"
+          className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4"
         >
           <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-black">
             HAVIT HV-G92 Gamepad
@@ -277,8 +296,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg              ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -290,8 +308,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg           ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -303,8 +320,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -316,8 +332,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -334,15 +349,25 @@ const Today: React.FC = () => {
             </div>
             <p
               className="flex-grow-0 flex-shrink-0 w-8 h-5 opacity-50 text-sm font-semibold text-left text-black"
-            >
-              (88)
-            </p>
-          </div>
+            >(88)</p>
+            
+            </div>
+            </div>
+          
         </div>
-      </div>
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+        </CarouselItem>
+        
+
+
+        
+
+
+
+        
+      <CarouselItem className="flex flex-col basis-1/4 justify-start items-start  flex-grow-0 flex-shrink-0 relative gap-4">
+      
         <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
@@ -350,11 +375,13 @@ const Today: React.FC = () => {
             <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-35%</p>
           </div>
           <div
-            className="w-[270px] h-[41px] absolute left-[-1px] top-52 rounded-bl rounded-br bg-black"
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
           ></div>
-          <p className="absolute left-[87px] top-[217px] text-base font-medium text-left text-white">
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
             Add To Cart
-          </p>
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width="34"
@@ -372,8 +399,7 @@ const Today: React.FC = () => {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path></svg
-            ><svg
+              ></path></svg         ><svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
@@ -436,8 +462,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -449,8 +474,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -462,8 +486,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg           ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -475,8 +498,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                               ></path></svg          ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -499,16 +521,31 @@ const Today: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-        <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+      </CarouselItem>
+
+      
+
+      
+
+
+      <CarouselItem className="flex flex-col basis-1/4 justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      
+
+        <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
           >
             <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-30%</p>
           </div>
+          <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width="34"
@@ -526,8 +563,7 @@ const Today: React.FC = () => {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path></svg
-            ><svg
+              ></path></svg          ><svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
@@ -590,8 +626,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -603,8 +638,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg           ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -616,8 +650,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -629,8 +662,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -652,16 +684,33 @@ const Today: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      </CarouselItem>
+    
+
+   
+
+
+
+
+      <CarouselItem className="flex flex-col basis-1/4 justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      
+
         <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
           >
             <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-25%</p>
           </div>
+          <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <svg
               width="34"
@@ -679,8 +728,7 @@ const Today: React.FC = () => {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path></svg
-            ><svg
+              ></path></svg          ><svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
@@ -743,8 +791,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -756,8 +803,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -769,8 +815,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -782,8 +827,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -810,23 +854,38 @@ const Today: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      </CarouselItem>
+
+
+      
+
+
+
+      <CarouselItem className="flex flex-col basis-1/4 justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      
+
         <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
           >
-            <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-25%</p>
+            <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-20%</p>
           </div>
+          <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
-            <div className="flex-grow-0 flex-shrink-0 w-[34px] h-[34px] relative"></div>
-            <div className="flex-grow-0 flex-shrink-0 w-[34px] h-[34px] relative"></div>
+            <div className="flex-grow-0 flex-shrink-0 w-[34px] h-[34px] group relative"></div>
           </div>
           <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
             <img
-              src="images/m.png"
+              src="images/l.png"
               className="w-[107px] h-[180px] absolute left-10 top-[-1px] object-none"
             />
           </div>
@@ -861,8 +920,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -874,8 +932,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg            ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -887,8 +944,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="16"
                 height="15"
                 viewBox="0 0 16 15"
@@ -900,8 +956,7 @@ const Today: React.FC = () => {
                 <path
                   d="M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z"
                   fill="#FFAD33"
-                ></path></svg
-              ><svg
+                ></path></svg             ><svg
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -928,23 +983,40 @@ const Today: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      </CarouselItem>
+
+
+      
+
+
+
+
+      <CarouselItem className="flex flex-col basis-1/4 justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+      
+
         <div
-          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100"
+          className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative group overflow-hidden rounded bg-neutral-100"
         >
           <div
             className="flex justify-center items-center absolute left-3 top-3 gap-2.5 px-3 py-1 rounded bg-[#db4444]"
           >
-            <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-25%</p>
+            <p className="flex-grow-0 flex-shrink-0 text-xs text-left text-neutral-50">-15%</p>
           </div>
+          <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
           <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
             <div className="flex-grow-0 flex-shrink-0 w-[34px] h-[34px] relative"></div>
             <div className="flex-grow-0 flex-shrink-0 w-[34px] h-[34px] relative"></div>
           </div>
           <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
             <img
-              src="sam-moghadam-khamseh-kvmdstrgobm-unsplash-1.png"
+              src="images/l.png"
               className="w-[107px] h-[180px] absolute left-10 top-[-1px] object-none"
             />
           </div>
@@ -978,15 +1050,34 @@ const Today: React.FC = () => {
             >
               (99)
             </p>
+            
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+       </div>
+       
+      </CarouselItem>   
+      </CarouselContent>     
+      <CarouselPrevious />
+      <CarouselNext />
+      </Carousel>
+      </div>
+       </div>
+       
+
+
+       
+       
+     
+       
+       
+      
 
   );
 };
 
 export default Today;
+
+
+
+
+

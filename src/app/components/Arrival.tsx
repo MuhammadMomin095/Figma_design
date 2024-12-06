@@ -57,8 +57,8 @@ const Arrival : React.FC = () => {
         <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-8">
           <div className="flex-grow-0 flex-shrink-0 w-[570px] h-[284px] relative overflow-hidden rounded bg-[#0d0d0d]">
             <img
-              src="images/66.png"
-              className="w-[432px] h-[286px] absolute left-[569px] top-[-1px] object-cover"
+              src="images/6.png"
+              className="w-[432px] h-[286px] absolute left-[140px] top-[-1px] object-cover"
             />
             <div className="flex flex-col justify-start items-start absolute left-6 top-[138px] gap-4">
               <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
@@ -104,7 +104,7 @@ const Arrival : React.FC = () => {
                   <path
                     d="M233 142C233 196.124 189.124 240 135 240C80.8761 240 37 196.124 37 142C37 87.8761 80.8761 44 135 44C189.124 44 233 87.8761 233 142Z"
                     fill="#D9D9D9"
-                    fill-opacity="0.9"
+                    fillOpacity="0.9"
                   />
                 </g>
                 <defs>
@@ -115,9 +115,9 @@ const Arrival : React.FC = () => {
                     width={796}
                     height={796}
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity={0} result="BackgroundImageFix" />
+                    <feFlood floodOpacity={0} result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -177,7 +177,7 @@ const Arrival : React.FC = () => {
                   <path
                     d="M254 142C254 207.722 200.722 261 135 261C69.2781 261 16 207.722 16 142C16 76.2781 69.2781 23 135 23C200.722 23 254 76.2781 254 142Z"
                     fill="#D9D9D9"
-                    fill-opacity="0.9"
+                    fillOpacity="0.9"
                   />
                 </g>
                 <defs>
@@ -188,9 +188,9 @@ const Arrival : React.FC = () => {
                     width={838}
                     height={838}
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity={0} result="BackgroundImageFix" />
+                    <feFlood floodOpacity={0} result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"

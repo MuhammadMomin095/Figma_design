@@ -60,10 +60,26 @@ const Product: React.FC = () => {
             </svg>
           </div>
         </div>
+
         <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 gap-[60px]">
           <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-[30px]">
+
+
+
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -112,7 +128,7 @@ const Product: React.FC = () => {
                 <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
                   <img
                     src="images/a.png"
-                    className="w-[115px] h-[180px] absolute left-[37px] top-[-1px] object-none"
+                    className="w-[105px] h-[165px] absolute left-[37px] top-[-1px] object-none"
                   />
                 </div>
               </div>
@@ -208,12 +224,23 @@ const Product: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
-                <div className="w-[270px] h-[41px] absolute left-[-1px] top-52 rounded-bl rounded-br bg-black" />
-                <p className="absolute left-[87px] top-[217px] text-base font-medium text-left text-white">
-                  Add To Cart
-                </p>
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -357,8 +384,21 @@ const Product: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -407,7 +447,7 @@ const Product: React.FC = () => {
                 <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
                   <img
                     src="images/c.png"
-                    className="w-[172px] h-[180px] absolute left-2 top-[-1px] object-none"
+                    className="w-[172px] h-[170px] absolute left-2 top-[-1px] object-none"
                   />
                 </div>
               </div>
@@ -501,8 +541,20 @@ const Product: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -648,7 +700,15 @@ const Product: React.FC = () => {
           </div>
           <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-[30px]">
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -820,7 +880,15 @@ const Product: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] group h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -988,8 +1056,20 @@ const Product: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -1165,8 +1245,20 @@ const Product: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+
+
             <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
-              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] relative overflow-hidden rounded bg-neutral-100">
+              <div className="flex-grow-0 flex-shrink-0 w-[270px] h-[250px] group relative overflow-hidden rounded bg-neutral-100">
+              <div
+            className="group w-[270px] h-[41px] absolute opacity-0 group-hover:opacity-100 left-[-1px] top-52 rounded-bl rounded-br bg-black"
+          ></div>
+          <Link href="/Cart">
+          <button className="absolute left-[87px] top-[217px] text-base opacity-0 group-hover:opacity-100 font-medium text-left text-white">
+            Add To Cart
+          </button>
+          </Link>
                 <div className="flex flex-col justify-start items-start absolute left-56 top-3 gap-2">
                   <svg
                     width={34}
@@ -1215,7 +1307,7 @@ const Product: React.FC = () => {
                 <div className="w-[190px] h-[180px] absolute left-10 top-[35px] overflow-hidden">
                   <img
                     src="images/h.png"
-                    className="w-[182px] h-44 absolute left-[3px] top-px object-none"
+                    className="w-[182px] h-40 absolute left-[3px] top-px object-none"
                   />
                 </div>
               </div>
