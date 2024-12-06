@@ -1,6 +1,33 @@
+"use client"
+
 import Link from 'next/link';
+import { useState } from 'react';
+
+
+
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearchSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    console.log('Search for:', searchQuery);
+  };
+
+
+
+  const [isOpen, setIsOpen] = useState(false); // State to toggle dropdown
+
+  // Function to handle toggle
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+
   return (
 <div className="w-[1440px] h-[334px]">
   <div className="w-[1440px] h-12 absolute left-0 top-0 overflow-hidden bg-black">
@@ -77,10 +104,20 @@ const Navbar = () => {
       <div
         className="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 gap-2.5 pl-5 pr-3 py-[7px] rounded bg-neutral-100"
       >
+
+
+
         <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-[34px]">
-          <p className="flex-grow-0 flex-shrink-0 opacity-50 text-xs text-left text-black">
-            What are you looking for?
-          </p>
+        <form
+            onSubmit={handleSearchSubmit}
+            className="relative flex items-center justify-between gap-2 pl-5 pr-2 py-[0px] rounded bg-neutral-100">
+             <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              placeholder="What are you looking for?" 
+              className="w-[153px] h-[18px] placeholder:text-xs text-black bg-transparent border-none focus:outline-none"
+            />
           <svg
             width="24"
             height="24"
@@ -97,8 +134,10 @@ const Navbar = () => {
               strokeLinecap="round"
             ></path>
           </svg>
+          </form>
         </div>
       </div>
+      
       <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-4">
         <svg
           width="32"
@@ -174,7 +213,13 @@ const Navbar = () => {
            
           </div>
         </div>
+
+
+
+
+
         <svg
+         onClick={toggleDropdown}
           width="32"
           height="32"
           viewBox="0 0 32 32"
@@ -213,11 +258,12 @@ const Navbar = () => {
 
 
 
+  
 
+  {isOpen && (
 
     <div
-      className="w-56 h-52 relative overflow-hidden rounded bg-gradient-to-br from-[#baa8ce] via-[#7d6797] to-[#2a2a2a] bg-opacity-90 backdrop-blur-[150px]"
-    >
+      className="w-56 h-52 relative overflow-hidden rounded bg-gradient-to-br from-[#baa8ce] via-[#7d6797] to-[#2a2a2a] bg-opacity-90 backdrop-blur-[150px]"> 
       <div className="flex flex-col justify-start items-start absolute left-5 top-[18px] gap-[13px]">
         <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-4">
           <svg
@@ -226,6 +272,7 @@ const Navbar = () => {
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            
             className="flex-grow-0 flex-shrink-0 w-8 h-8 relative"
             preserveAspectRatio="none"
           >
@@ -344,8 +391,13 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    )
+  };
+  
   </div>
-</div>
+  </div>
+
+
   );
 };
 
