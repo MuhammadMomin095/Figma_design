@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Link from 'next/link';
+
 
 
 
@@ -78,11 +80,13 @@ const LoginPage = () => {
       <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[87px]">
         <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 gap-4">
           <div
-            className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+            className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
           >
-            <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+            <Link href="/">
+            <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
               Log In
             </p>
+            </Link>
           </div>
         </div>
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-[#db4444]">Forget Password?</p>

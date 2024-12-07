@@ -157,16 +157,18 @@ const CartPage = () => {
       </div>
       <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-[757px]">
         <div
-          className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded border border-black/50"
+          className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 group rounded border border-black/50 hover:bg-[#db4444]"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-black">
+          <Link href="Wishlist">
+          <p className="flex-grow-0 cursor-pointer flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
             Return To Shop
           </p>
+          </Link>
         </div>
         <div
-          className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded border border-black/50"
+          className="flex justify-center items-center flex-grow-0 flex-shrink-0 group relative gap-2.5 px-12 py-4 rounded border border-black/50 hover:bg-[#db4444]"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-black">
+          <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
             Update Cart
           </p>
         </div>
@@ -177,12 +179,12 @@ const CartPage = () => {
         <div
           className="flex-grow-0 flex-shrink-0 w-[300px] h-14 relative overflow-hidden rounded border border-black"
         >
-          <p className="absolute left-6 top-4 opacity-50 text-base text-left text-black">Coupon Code</p>
+          <input type='code' className="absolute left-6 top-4 opacity-50 text-base text-left text-black" placeholder='Coupon Code'/>
         </div>
         <div
-          className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+          className="flex justify-center items-center flex-grow-0 flex-shrink-0 group relative border border-black/50 gap-2.5 px-12 py-4 rounded hover:bg-[#db4444]"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+          <p className="flex-grow-0 flex-shrink-0 text-base font-medium group-hover:text-neutral-50 text-black text-left ">
             Apply Coupon
           </p>
         </div>
@@ -204,10 +206,10 @@ const CartPage = () => {
           <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">$1750</p>
         </div>
         <div
-          className="flex justify-center items-center absolute left-[89px] top-[236px] gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+          className="flex justify-center items-center absolute left-[89px] top-[236px] gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
         >
         <Link href="/CheckOut">
-        <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+        <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
           Proceed to checkout
          </p>
         </Link>

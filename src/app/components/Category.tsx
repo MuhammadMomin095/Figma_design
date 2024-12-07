@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   Tooltip,
   TooltipContent,
@@ -68,9 +69,12 @@ const Category : React.FC = () => {
         </div>
       </div>
       <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-[30px]">
-        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
+        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
         style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}>
-          <p className="absolute left-[55px] top-[97px] text-base hover:text-white text-left text-black">Phones</p>
+        <Link href="/Detail">
+          <p className="absolute left-[55px] top-[97px] text-base group-hover:text-white text-left text-black">Phones</p>
+          </Link>
+          <div className='svg-icon'>
           <svg
             width={56}
             height={56}
@@ -119,10 +123,13 @@ const Category : React.FC = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
+        </div>
+        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
         style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}>
-
-          <p className="absolute left-10 top-[97px] text-base text-left hover:text-white text-black">Computers</p>
+          <Link href="/Detail">
+          <p className="absolute left-10 top-[97px] text-base text-left group-hover:text-white text-black">Computers</p>
+          </Link>
+          <div className='svg-icon'>
           <svg
             width={56}
             height={56}
@@ -170,12 +177,15 @@ const Category : React.FC = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
+        </div>
+        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
         style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}>
-
-          <p className="absolute left-[34px] top-[97px] text-base text-left hover:text-white text-black">SmartWatch</p>
+            <Link href="/Detail">
+          <p className="absolute left-[34px] top-[97px] text-base text-left group-hover:text-white text-black">SmartWatch</p>
+          </Link>
           <div className="w-14 h-14 absolute left-[57px] top-[25px] overflow-hidden">
             <div className="absolute left-[-1.42px] top-[-1.42px]" />
+            <div className='svg-icon'>
             <svg
               width={30}
               height={30}
@@ -288,15 +298,16 @@ const Category : React.FC = () => {
             </div>
           </div>
         </div>
+        </div>
         <div
-          className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden onMouseOver
+          className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden onMouseOver
           onMouseOut group-hover:text-white border border-black/30 rounded  hover:bg-[#db4444]"
           style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}
         >
-          <p className="absolute left-[51px] top-[97px] text-base text-left hover:text-white text-black">
+          <p className="absolute left-[51px] top-[97px] text-base text-left group-hover:text-white text-black">
             Camera
           </p>
-          
+          <div className='svg-icon'>
           <svg
             width={56}
             height={56}
@@ -329,10 +340,14 @@ const Category : React.FC = () => {
             </defs>
           </svg>
         </div>
+        </div>
 
-        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
+        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
         style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}>
-          <p className="absolute left-[34px] top-[97px] text-base text-left hover:text-white text-black">HeadPhones</p>
+          <Link href="/Detail">
+          <p className="absolute left-[34px] top-[97px] text-base text-left group-hover:text-white text-black">HeadPhones</p>
+          </Link>
+          <div className='svg-icon'>
           <svg
             width={56}
             height={56}
@@ -372,10 +387,14 @@ const Category : React.FC = () => {
             </defs>
           </svg>
         </div>
+        </div>
         
-        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
+        <div className="flex-grow-0 flex-shrink-0 w-[170px] h-[145px] group relative overflow-hidden rounded border border-black/30 hover:bg-[#db4444]"
           style={{ boxShadow: "0px 1px 13px 0 rgba(0,0,0,0.05)" }}>
-          <p className="absolute left-[53px] top-[97px] text-base text-left hover:text-white text-black">Gaming</p>
+            <Link href="/Detail">
+          <p className="absolute left-[53px] top-[97px] text-base text-left group-hover:text-white text-black">Gaming</p>
+          </Link>
+          <div className='svg-icon'>
           <svg
             width={56}
             height={56}
@@ -424,10 +443,12 @@ const Category : React.FC = () => {
         </div>
       </div>
     </div>
+    </div>
     </TooltipTrigger>
     </Tooltip>
 </TooltipProvider>
   </div>
+  
     );
 };
 

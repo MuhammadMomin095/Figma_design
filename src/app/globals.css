@@ -71,7 +71,11 @@ body {
   }
 }
 
-.Footer{
-  margin-top:50rem;
-  background-color: black;
+.group:hover .svg-icon path{
+  stroke: white;
 }
+
+.group:hover .svg-icon line{
+  stroke: white;
+}
+

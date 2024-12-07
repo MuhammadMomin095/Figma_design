@@ -65,8 +65,19 @@ const AboutPage = () => {
     />
   </div>
   <div className="flex justify-start items-start absolute left-[135px] top-[1034px] gap-[30px]">
+
+
+
+
+
+
+
+
+
+    <div className='group'>
     <div
-      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded border border-black/30"
+      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded group-hover:bg-[#db4444] border border-black/30"
+      style={{boxShadow: "0px 2px 10px 2px rgba(0,0,0,0.2)",}}
     >
       <div className="flex flex-col justify-start items-center absolute left-[50px] top-[30px] gap-6">
         <svg
@@ -79,6 +90,7 @@ const AboutPage = () => {
           preserveAspectRatio="none"
         >
           <path
+          className='group-hover:bg-white'
             opacity="0.3"
             d="M80.5 40C80.5 62.0914 62.5914 80 40.5 80C18.4086 80 0.5 62.0914 0.5 40C0.5 17.9086 18.4086 0 40.5 0C62.5914 0 80.5 17.9086 80.5 40ZM11.4071 40C11.4071 56.0675 24.4325 69.0929 40.5 69.0929C56.5675 69.0929 69.5929 56.0675 69.5929 40C69.5929 23.9325 56.5675 10.9071 40.5 10.9071C24.4325 10.9071 11.4071 23.9325 11.4071 40Z"
             fill="#2F2E30"
@@ -119,15 +131,28 @@ const AboutPage = () => {
         <div
           className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-3"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-black">10.5k</p>
-          <p className="flex-grow-0 flex-shrink-0 text-base text-center text-black">
+          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left group-hover:text-white text-black">10.5k</p>
+          <p className="flex-grow-0 flex-shrink-0 text-base text-center group-hover:text-white text-black">
             Sallers active our site
           </p>
         </div>
       </div>
     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div className='group'>
     <div
-      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded bg-[#db4444]"
+      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded group-hover:bg-[#db4444]"
       style={{boxShadow: "0px 2px 10px 2px rgba(0,0,0,0.2)",}}
     >
       <div className="flex flex-col justify-start items-center absolute left-[35px] top-8 gap-6">
@@ -141,9 +166,10 @@ const AboutPage = () => {
           preserveAspectRatio="none"
         >
           <path
+          className='group-hover:bg-white'
             opacity="0.3"
             d="M80 40C80 62.0914 62.0914 80 40 80C17.9086 80 0 62.0914 0 40C0 17.9086 17.9086 0 40 0C62.0914 0 80 17.9086 80 40ZM10.9071 40C10.9071 56.0675 23.9325 69.0929 40 69.0929C56.0675 69.0929 69.0929 56.0675 69.0929 40C69.0929 23.9325 56.0675 10.9071 40 10.9071C23.9325 10.9071 10.9071 23.9325 10.9071 40Z"
-            fill="white"
+            fill="#2F2E30"
           ></path>
           <circle cx="40" cy="40" r="29" fill="white"></circle>
           <path
@@ -171,15 +197,27 @@ const AboutPage = () => {
         <div
           className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-white">33k</p>
-          <p className="flex-grow-0 flex-shrink-0 text-base text-left text-white">
-            Mopnthly Produduct Sale
+          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-black group-hover:text-white">33k</p>
+          <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black group-hover:text-white">
+            Monthly Produduct Sale
           </p>
         </div>
       </div>
     </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<div className='group'>
     <div
-      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded border border-black/30"
+      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded border group-hover:bg-[#db4444] border-black/30"
+      style={{boxShadow: "0px 2px 10px 2px rgba(0,0,0,0.2)",}}
     >
       <div
         className="flex flex-col justify-start items-center w-[262px] absolute left-1 top-[30px] gap-6"
@@ -207,15 +245,26 @@ const AboutPage = () => {
         <div
           className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-3"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-black">45.5k</p>
-          <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left group-hover:text-white text-black">45.5k</p>
+          <p className="flex-grow-0 flex-shrink-0 text-base text-left group-hover:text-white text-black">
             Customer active in our site
           </p>
         </div>
       </div>
     </div>
+    </div>
+
+
+
+
+
+
+
+
+<div className='group'>
     <div
-      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded border border-black/30"
+      className="flex-grow-0 flex-shrink-0 w-[270px] h-[230px] relative overflow-hidden rounded border group-hover:bg-[#db4444] border-black/30"
+      style={{boxShadow: "0px 2px 10px 2px rgba(0,0,0,0.2)",}}
     >
       <div className="flex flex-col justify-start items-center absolute left-7 top-[30px] gap-6">
         <svg
@@ -247,14 +296,23 @@ const AboutPage = () => {
         <div
           className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative gap-3"
         >
-          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left text-black">25k</p>
-          <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">
+          <p className="flex-grow-0 flex-shrink-0 text-[32px] font-bold text-left group-hover:text-white text-black">25k</p>
+          <p className="flex-grow-0 flex-shrink-0 text-base text-left group-hover:text-white text-black">
             Anual gross sale in our site
           </p>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
+
+
+
+
+
+
+
   <div className="flex justify-start items-start absolute left-[135px] top-[1404px] gap-[30px]">
     <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-8">
       <div

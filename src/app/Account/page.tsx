@@ -42,7 +42,7 @@ const AccountPage = () => {
   </div>
   <p className="absolute left-[1166px] top-[222px] text-sm text-left">
     <span className="text-sm text-left text-black">Welcome! </span
-    ><span className="text-sm text-left text-[#db4444]">Md Rimel</span>
+    > <Link href="/"> <span className="text-sm text-left hover:text-[#db4444]">Home</span> </Link>
   </p>
   <p className="absolute left-[135px] top-[323px] text-base font-medium text-left text-black">
     Manage My Account
@@ -55,16 +55,16 @@ const AccountPage = () => {
   >
     My WishList
   </p>
-  <div className="flex flex-col justify-start items-start absolute left-[170px] top-[363px] gap-2">
-    <p className="flex-grow-0 flex-shrink-0 text-base text-left text-[#db4444]">My Profile</p>
-    <p className="flex-grow-0 flex-shrink-0 opacity-50 text-base text-left text-black">Address Book</p>
-    <p className="flex-grow-0 flex-shrink-0 opacity-50 text-base text-left text-black">
+  <div className="flex flex-col justify-start items-start absolute opacity-80 left-[170px] top-[363px] gap-2">
+    <p className="flex-grow-0 flex-shrink-0 text-base text-left hover:text-[#db4444]">My Profile</p>
+    <p className="flex-grow-0 flex-shrink-0 text-base text-left hover:text-[#db4444]">Address Book</p>
+    <p className="flex-grow-0 flex-shrink-0 text-base text-left hover:text-[#db4444]">
       My Payment Options
     </p>
   </div>
-  <div className="flex flex-col justify-start items-start absolute left-[170px] top-[515px] gap-2">
-    <p className="flex-grow-0 flex-shrink-0 opacity-50 text-base text-left text-black">My Returns</p>
-    <p className="flex-grow-0 flex-shrink-0 opacity-50 text-base text-left text-black">
+  <div className="flex flex-col justify-start items-start absolute opacity-80 left-[170px] top-[515px] gap-2">
+    <p className="flex-grow-0 flex-shrink-0  text-base text-left hover:text-[#db4444]">My Returns</p>
+    <p className="flex-grow-0 flex-shrink-0  text-base text-left hover:text-[#db4444]">
       My Cancellations
     </p>
   </div>
@@ -77,21 +77,21 @@ const AccountPage = () => {
     </p>
     <div className="flex justify-start items-start absolute left-20 top-[84px] gap-[50px]">
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
-        <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">First Name</p>
+        <div className="flex-grow-0 flex-shrink-0 text-base text-left text-black">First Name</div>
         <div className="flex-grow-0 flex-shrink-0 w-[330px] h-[50px] relative">
-          <div
-            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-          ></div>
-          <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">Md</p>
+          <input
+            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='First Name'
+          />
+          
         </div>
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Last Name</p>
         <div className="flex-grow-0 flex-shrink-0 w-[330px] h-[50px] relative">
-          <div
-            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-          ></div>
-          <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">Rimel</p>
+          <input
+            className="w-[330px] h-[50px] absolute top-0 overflow-hidden rounded left-0 bg-neutral-100" placeholder='Last Name'
+          />
+          
         </div>
       </div>
     </div>
@@ -99,23 +99,22 @@ const AccountPage = () => {
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Email</p>
         <div className="flex-grow-0 flex-shrink-0 w-[330px] h-[50px] relative">
-          <div
-            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-          ></div>
-          <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">
-            rimel1111@gmail.com
-          </p>
+          <input type='email'
+            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='Email'
+          />
+          
+          
         </div>
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Address</p>
         <div className="flex-grow-0 flex-shrink-0 w-[330px] h-[50px] relative">
-          <div
-            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-          ></div>
-          <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">
-            Kingston, 5236, United State
-          </p>
+          <input type='text'
+            className="w-[330px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='Address'
+          />
+          
+            
+          
         </div>
       </div>
     </div>
@@ -123,37 +122,30 @@ const AccountPage = () => {
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Password Changes</p>
         <div className="flex-grow-0 flex-shrink-0 w-[710px] h-[50px] relative">
-          <div
-            className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-          ></div>
-          <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">
-            Current Passwod
-          </p>
+          <input type='password'
+            className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='Current Passwod'
+          />
+          
         </div>
       </div>
       <div className="flex-grow-0 flex-shrink-0 w-[710px] h-[50px] relative">
-        <div
-          className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-        ></div>
-        <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">
-          New Passwod
-        </p>
+        <input type='password'
+          className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='New Passwod'
+        />
       </div>
       <div className="flex-grow-0 flex-shrink-0 w-[710px] h-[50px] relative">
-        <div
-          className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100"
-        ></div>
-        <p className="absolute left-4 top-[13px] opacity-50 text-base text-left text-black">
-          Confirm New Passwod
-        </p>
+        <input type='password'
+          className="w-[710px] h-[50px] absolute left-0 top-0 overflow-hidden rounded bg-neutral-100" placeholder='Confirm New Passwod'
+        />
+        
       </div>
     </div>
     <div className="flex justify-start items-center absolute left-[487px] top-[534px] gap-8">
       <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Cancel</p>
       <div
-        className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+        className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
       >
-        <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+        <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
           Save Changes
         </p>
       </div>
@@ -210,7 +202,7 @@ const AccountPage = () => {
                 />
               </svg>
               <p className="flex-grow-0 flex-shrink-0 text-base text-left text-white">
-                Copyright Rimel 2022. All right reserved
+                Copyright Momin 2022. All right reserved
               </p>
             </div>
           </div>

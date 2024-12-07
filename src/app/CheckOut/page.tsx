@@ -12,6 +12,8 @@ const CheckOut = () => {
         <div>
           {/* Navbar */}
           <Navbar />
+
+         
     
           {/* CheckOut Section */}
 
@@ -115,20 +117,19 @@ const CheckOut = () => {
           <span className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left text-black"
             >First Name</span
           ><span className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left text-[#db4444]"
-            >*</span
-          >
+            >*</span >
         </p>
-        <div
+        <input type='text'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left text-black">
           Company Name
         </p>
-        <div
+        <input type='text'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left">
@@ -138,17 +139,17 @@ const CheckOut = () => {
             >*</span
           >
         </p>
-        <div
+        <input type='text'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left text-black">
           Apartment, floor, etc. (optional)
         </p>
-        <div
+        <input type='text'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left">
@@ -158,9 +159,9 @@ const CheckOut = () => {
             >*</span
           >
         </p>
-        <div
+        <input type='text'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left">
@@ -170,9 +171,9 @@ const CheckOut = () => {
             >*</span
           >
         </p>
-        <div
+        <input type='number'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <p className="flex-grow-0 flex-shrink-0 opacity-40 text-base text-left">
@@ -182,22 +183,22 @@ const CheckOut = () => {
             >*</span
           >
         </p>
-        <div
+        <input type='email'
           className="flex-grow-0 flex-shrink-0 w-[470px] h-[50px] relative overflow-hidden rounded bg-neutral-100"
-        ></div>
+        />
       </div>
     </div>
-    <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
+    <div className="flex justify-start items-start group flex-grow-0 flex-shrink-0 relative gap-4">
       <svg
         width="24"
         height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+        className="flex-grow-0 flex-shrink-0 w-6 h-6 relative border"
         preserveAspectRatio="none"
       >
-        <rect width="24" height="24" rx="4" fill="#DB4444"></rect>
+        <rect className='opacity-0 group-hover:opacity-100' width="24" height="24" rx="4" fill="#DB4444"></rect>
         <path
           d="M5 12L10.25 17L19 7"
           stroke="white"
@@ -216,7 +217,7 @@ const CheckOut = () => {
       <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-6">
         <div className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative overflow-hidden">
           <img
-            src="g92-2-500x500-1.png"
+            src="images/i.png"
             className="w-[48.88px] h-[42.22px] absolute left-0.5 top-[5px] object-none"
           />
         </div>
@@ -228,7 +229,7 @@ const CheckOut = () => {
       <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-5">
         <div className="flex-grow-0 flex-shrink-0 w-[54px] h-[54px] relative overflow-hidden">
           <img
-            src="g27cq4-500x500-1.png"
+            src="images/k.png"
             className="w-[50px] h-[39px] absolute left-px top-[7px] object-none"
           />
         </div>
@@ -302,31 +303,32 @@ const CheckOut = () => {
           preserveAspectRatio="none"
         >
           <circle cx="12" cy="12" r="11.25" stroke="black" strokeWidth="1.5"></circle>
+          <circle className='opacity-0 hover:opacity-100 cursor-pointer' cx="12" cy="12" r="7" fill="black"></circle>
         </svg>
         <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Bank</p>
       </div>
       <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2">
         <div className="flex-grow-0 flex-shrink-0 w-[42px] h-7 relative overflow-hidden">
           <img
-            src="image-32.png"
+            src="images/30.png"
             className="w-[37.8px] h-[16.8px] absolute left-[1.1px] top-[4.6px] object-none"
           />
         </div>
         <div className="flex-grow-0 flex-shrink-0 w-[42px] h-7 relative overflow-hidden">
           <img
-            src="image-30.png"
+            src="images/31.png"
             className="w-[37.8px] h-[11.2px] absolute left-[1.1px] top-[7.4px] object-cover"
           />
         </div>
         <div className="flex-grow-0 flex-shrink-0 w-[42px] h-7 relative overflow-hidden">
           <img
-            src="image-31.png"
+            src="images/32.png"
             className="w-[39.2px] h-[25.2px] absolute left-[0.4px] top-[0.4px] object-none"
           />
         </div>
         <div className="flex-grow-0 flex-shrink-0 w-[42px] h-7 relative overflow-hidden">
           <img
-            src="image-33.png"
+            src="images/33.png"
             className="w-[39.2px] h-[18.2px] absolute left-[0.4px] top-[3.9px] object-none"
           />
         </div>
@@ -343,7 +345,7 @@ const CheckOut = () => {
         preserveAspectRatio="none"
       >
         <circle cx="12" cy="12" r="11.25" stroke="black" strokeWidth="1.5"></circle>
-        <circle cx="12" cy="12" r="7" fill="black"></circle>
+        <circle className='opacity-0 hover:opacity-100 cursor-pointer' cx="12" cy="12" r="7" fill="black"></circle>
       </svg>
       <p className="flex-grow-0 flex-shrink-0 text-base text-left text-black">Cash on delivery</p>
     </div>
@@ -351,20 +353,20 @@ const CheckOut = () => {
       <div
         className="flex-grow-0 flex-shrink-0 w-[300px] h-14 relative overflow-hidden rounded border border-black"
       >
-        <p className="absolute left-6 top-4 opacity-50 text-base text-left text-black">Coupon Code</p>
+        <input className="absolute left-6 top-4 opacity-50 text-base text-left text-black" placeholder='Coupon Code'/>
       </div>
       <div
-        className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+        className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
       >
-        <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+        <p className="flex-grow-0 flex-shrink-0 cursor-pointer text-base font-medium text-left group-hover:text-neutral-50 text-black">
           Apply Coupon
         </p>
       </div>
     </div>
     <div
-      className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+      className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
     >
-      <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+      <p className="flex-grow-0 flex-shrink-0 cursor-pointer text-base font-medium text-left group-hover:text-neutral-50 text-black">
         Place Order
       </p>
     </div>
@@ -688,9 +690,9 @@ const CheckOut = () => {
         </div>
       </div>
     </div>
-
-
     </div>
+    
+
   );
 };
 

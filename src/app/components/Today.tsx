@@ -16,10 +16,10 @@ const Today: React.FC = () => {
   return (
     <div className="w-[1440px] h-[609px]">
   <div
-    className="flex justify-center items-center absolute left-[603px] top-[1219px] gap-2.5 px-12 py-4 rounded bg-[#db4444]"
+    className="flex justify-center items-center absolute left-[603px] top-[1219px] gap-2.5 px-12 py-4 rounded group border border-black/50 hover:bg-[#db4444]"
   >
     <Link href="/Wishlist">
-    <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+    <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
       View All Products
     </p>
     </Link>
@@ -193,7 +193,7 @@ const Today: React.FC = () => {
       <CarouselContent>
 
   
-      <CarouselItem className="flex basis-1/4 justify-start items-start flex-grow flex-shrink w-0.5 gap-[30px]">
+      <CarouselItem className="flex basis-1/4 justify-start items-start flex-grow flex-shrink w-1 gap-[30px]">
     
       <div className="flex basis-1/4 flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4">
         <div

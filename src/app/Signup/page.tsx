@@ -89,10 +89,12 @@ const SignupPage = () => {
                     </div>
                   </div>
                   <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 gap-4">
-                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-[122px] py-4 rounded bg-[#db4444]">
-                      <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-50">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-[122px] py-4 rounded group border border-black/50 hover:bg-[#db4444]">
+                      <Link href="/">
+                      <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left group-hover:text-neutral-50 text-black">
                         Create Account
                       </p>
+                      </Link>
                     </div>
                     <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 gap-8">
                       <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 gap-2.5 px-[86px] py-4 rounded border border-black/40">
