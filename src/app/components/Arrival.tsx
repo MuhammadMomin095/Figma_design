@@ -43,7 +43,7 @@ export default function NewArrival() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {/* First Row - PlayStation 5 */}
         <div className="relative col-span-1 overflow-hidden rounded-lg bg-black md:row-span-2">
-          <Link href="/category/gaming" className="group block h-full">
+          <div className="group block h-full">
             <div className="relative h-[600px] w-full">
               <img
                 src="images/5.png"
@@ -64,12 +64,12 @@ export default function NewArrival() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
 
         {/* Second Row - Right Column Top - Women's Collections */}
         <div className="relative col-span-1 overflow-hidden rounded-lg bg-black">
-          <Link href="/category/women" className="group block">
+          <div className="group block">
             <div className="relative h-[300px] w-full">
               <img
                 src="images/66.png"
@@ -90,14 +90,14 @@ export default function NewArrival() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </div>
 
         {/* Third Row - Right Column Bottom */}
         <div className="grid grid-cols-2 gap-4">
           {/* Speakers */}
           <div className="relative overflow-hidden rounded-lg bg-black">
-            <Link href="/category/speakers" className="group block">
+            <div className="group block">
               <div className="relative h-[280px] w-full">
                 <img
                   src="images/7.png"
@@ -118,12 +118,12 @@ export default function NewArrival() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
 
           {/* Perfume */}
           <div className="relative overflow-hidden rounded-lg bg-black">
-            <Link href="/category/perfume" className="group block">
+            <div className="group block">
               <div className="relative h-[280px] w-full">
                 <img
                   src="images/8.png"
@@ -144,7 +144,7 @@ export default function NewArrival() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

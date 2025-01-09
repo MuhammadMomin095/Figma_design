@@ -73,11 +73,11 @@ export function ProductCard({ product, onRemoveFromWishlist, inWishlist }: Produ
               ★
             </span>
           ))}
-          <span className="text-sm text-gray-500">({product.reviews})</span>
+          <span className="text-sm bg-white text-gray-500">({product.reviews})</span>
         </div>
         <Link href="Cart">
-        <Button className="w-full mt-4">
-          <ShoppingCart className="mr-2 h-4 w-4" />
+        <Button className="w-full bg-black hover:text-black text-white mt-4">
+          <ShoppingCart className="mr-2 h-4 text-white hover:text-black bg-black w-4" />
           Add To Cart
         </Button>
         </Link>

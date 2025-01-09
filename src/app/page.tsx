@@ -19,7 +19,7 @@ export default function Home() {
   <div>   
       <Navbar />
 
-  <div className='px-20'>   
+  <div className='lg:px-20 md:px-14 sm:px-7'>   
 
 
       <Hero />
