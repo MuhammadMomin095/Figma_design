@@ -1,0 +1,15 @@
+@layer utilities {
+    .category-gradient {
+      @apply absolute inset-0 bg-gradient-to-b from-transparent to-black/60;
+    }
+  
+    .category-content {
+      @apply absolute bottom-0 left-0 p-6 text-white;
+    }
+  
+    .shop-now-link {
+      @apply inline-block border-b border-white pb-1 text-sm font-medium;
+    }
+  }
+  
+  

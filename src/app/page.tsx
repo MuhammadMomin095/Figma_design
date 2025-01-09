@@ -1,8 +1,7 @@
-import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Today from './components/Today';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Costomer from './components/Costomer';
 import Arrival from './components/Arrival';
 import Product from './components/Product';
 import Music from './components/Music';
@@ -17,8 +16,11 @@ import Category from './components/Category';
 
 export default function Home() {
   return (
-  <div>  
+  <div>   
       <Navbar />
+
+  <div className='px-20'>   
+
 
       <Hero />
 
@@ -34,7 +36,8 @@ export default function Home() {
 
       <Arrival />
 
-      <Costomer />
+  </div>
+
 
       <Footer />
 

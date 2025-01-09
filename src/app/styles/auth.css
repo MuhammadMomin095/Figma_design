@@ -1,0 +1,13 @@
+.auth-input {
+    @apply h-12 rounded-md border-gray-200 bg-gray-50/50 px-4;
+  }
+  
+  .auth-button {
+    @apply h-12 rounded-md bg-[#DB4444] text-white hover:bg-[#DB4444]/90;
+  }
+  
+  .auth-link {
+    @apply text-[#DB4444] hover:underline;
+  }
+  
+  
