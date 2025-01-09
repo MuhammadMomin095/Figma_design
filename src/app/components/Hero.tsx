@@ -65,7 +65,7 @@ const slides: SlideContent[] = [
     subtitle: "Spring Collection",
     cta: "Shop Now",
     image: "/images/iphone.png",
-    background: "bg-black "
+    background: "bg-black"
   },
   {
     title: "Special Offer",
@@ -130,7 +130,7 @@ export default function Hero() {
             <CarouselContent>
               {slides.map((slide, index) => (
                 <CarouselItem key={index}>
-                  <div className={`relative h-[400px] px-10 rounded-lg overflow-hidden ${slide.background}`}>
+                  <div className={`relative h-[400px] rounded-lg overflow-hidden ${slide.background}`}>
                     <div className="absolute inset-0 flex items-center justify-between p-12">
                       <div className="text-white">
                         {slide.logo && (
@@ -153,7 +153,7 @@ export default function Hero() {
                       <img
                         src={slide.image}
                         alt="Product"
-                        className="w-2/3 h-auto object-contain"
+                        className="w-1/2 h-auto object-contain"
                       />
                     </div>
                   </div>

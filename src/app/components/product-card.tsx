@@ -4,7 +4,7 @@ import { Product } from '../types/product'
 import { Button } from '@/components/ui/button'
 import { Eye, Heart, ShoppingCart, Trash2 } from 'lucide-react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 
 interface ProductCardProps {
   product: Product
@@ -21,13 +21,13 @@ export function ProductCard({ product, onRemoveFromWishlist, inWishlist }: Produ
         </span>
       )}
       <div className="relative aspect-square overflow-hidden rounded-lg">
-      <div className='flex items-center justify-center h-full'>
-  <img
-    src={product.image}
-    alt={product.name}
-    className="object-contain transition-transform group-hover:scale-105"
-  />
-</div>
+        <div className='flex items-center text-center justify-center h-full'>
+        <img
+          src={product.image}
+          alt={product.name}
+          className="object-cover transition-transform group-hover:scale-105"
+        />
+        </div>
         <div className="absolute right-2 top-2 flex flex-col gap-2">
           {inWishlist ? (
             <Button
@@ -76,8 +76,8 @@ export function ProductCard({ product, onRemoveFromWishlist, inWishlist }: Produ
           <span className="text-sm text-gray-500">({product.reviews})</span>
         </div>
         <Link href="Cart">
-        <Button className="w-full bg-black">
-          <ShoppingCart className="mr-2 bg-black h-4 w-4" />
+        <Button className="w-full mt-4">
+          <ShoppingCart className="mr-2 h-4 w-4" />
           Add To Cart
         </Button>
         </Link>

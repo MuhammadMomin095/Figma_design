@@ -3,9 +3,9 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
 import { Input } from "../components/ui/input"
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "../../components/ui/separator"
 import { X } from 'lucide-react'
 import { QuantitySelector } from '../components/quantity-selector'
 import type { CartItem } from '../types/cart'

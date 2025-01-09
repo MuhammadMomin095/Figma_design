@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { ProductCard } from '.././components/product-card'
-import { products } from '@/lib/products'
+import { products } from '../.././lib/products'
 import { ShoppingBag } from 'lucide-react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

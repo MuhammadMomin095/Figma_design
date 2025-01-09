@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
 import { Input } from "../components/ui/input"
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

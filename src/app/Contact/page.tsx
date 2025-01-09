@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
 import { Input } from "../components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "../../components/ui/textarea"
 import { Phone, Mail } from 'lucide-react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';

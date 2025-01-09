@@ -213,46 +213,28 @@ export default function CheckOut() {
             </div>
           </div>
 
-
-          
           <div className="rounded-lg border bg-card p-6">
             <RadioGroup
               value={paymentMethod}
               onValueChange={setPaymentMethod}
               className="space-y-4"
             >
-
-
-              <div className='space-x-28 grid grid-cols-2'>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="bank" id="bank" />
                 <Label htmlFor="bank">Bank</Label>
-              </div>
-             
-
-
-
                 <div className="ml-auto flex gap-2">
-                  {['30', '31', '32', '33'].map(card => (
+                  {['bkash', 'visa', 'mastercard', 'nogod'].map(card => (
                     <div key={card} className="relative h-8 w-12">
                       <Image
-                        src={`/images/${card}.png`}
+                        src={`/${card}.png`}
                         alt={card}
                         fill
                         className="object-contain"
                       />
                     </div>
                   ))}
-                  </div>
-
                 </div>
-             
-              
-
-
-
-
-
+              </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="cash" id="cash" />
                 <Label htmlFor="cash">Cash on delivery</Label>
@@ -266,10 +248,10 @@ export default function CheckOut() {
               value={couponCode}
               onChange={(e) => setCouponCode(e.target.value)}
             />
-            <Button className='text-black hover:text-white bg-white hover:bg-red-600' variant="outline">Apply Coupon</Button>
+            <Button variant="outline">Apply Coupon</Button>
           </div>
 
-          <Button className="w-full text-black hover:text-white bg-white hover:bg-red-600" size="lg" onClick={handleSubmit}>
+          <Button className="w-full" size="lg" onClick={handleSubmit}>
             Place Order
           </Button>
         </div>

@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { Truck, Headphones, ShieldCheck } from 'lucide-react'
 

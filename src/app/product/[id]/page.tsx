@@ -9,7 +9,10 @@ import { Heart, Minus, Plus, Truck } from 'lucide-react'
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
+
+
 export default function ProductPage({ params }: { params: { id: string } }) {
+  
   
   const product = products.find(p => p.id === params.id)
   const [selectedImage, setSelectedImage] = useState(0)
@@ -196,4 +199,3 @@ export default function ProductPage({ params }: { params: { id: string } }) {
   </div>
   )
 }
-
