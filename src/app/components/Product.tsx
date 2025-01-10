@@ -162,11 +162,13 @@ export default function ProductGrid() {
                   <Eye className="w-4 h-4 stroke-gray-600" />
                 </button>
               </div>
+                  <div className='flex justify-center items-center h-60' >
               <img
                 src={product.image}
                 alt={product.name}
                 className="justify-center flex items-center object-cover rounded-lg mb-4"
               />
+            </div>
             </div>
             <h3 className="font-semibold mb-2">{product.name}</h3>
             <div className="flex items-center gap-2 mb-2">

@@ -120,7 +120,7 @@ export default function ContactPage() {
               className="min-h-[200px]"
               required
             />
-            <Button type="submit" className="w-full bg-red-500 md:w-auto">
+            <Button type="submit" className="w-full bg-red-500 text-white hover:text-black md:w-auto">
               Send Message
             </Button>
           </form>

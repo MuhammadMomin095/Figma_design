@@ -66,16 +66,16 @@ export default function Navbar() {
                     Exclusive
                   </Link>
                   <nav className="flex flex-col gap-2">
-                    <Link href="/" className="hover:text-gray-600">
+                    <Link href="/" className="hover:text-gray-100 text-gray-200">
                       Home
                     </Link>
-                    <Link href="Contact" className="hover:text-gray-600">
+                    <Link href="Contact" className="hover:text-gray-100 text-gray-200">
                       Contact
                     </Link>
-                    <Link href="About" className="hover:text-gray-600">
+                    <Link href="About" className="hover:text-gray-100 text-gray-200">
                       About
                     </Link>
-                    <Link href="Signup" className="hover:text-gray-600">
+                    <Link href="Signup" className="hover:text-gray-100 text-gray-200">
                       Sign Up
                     </Link>
                   </nav>

@@ -183,18 +183,18 @@ export default function AccountPage() {
               </div>
             </div>
 
-            <div className="flex justify-end gap-4">
+            <div className="flex  justify-end gap-4 ">
               <Button
                 type="button"
                 variant="outline"
                 onClick={handleCancel}
-                className="h-12 px-6"
+                className="h-12 px-6 bg-white text-black hover:text-white hover:bg-[#DB4444]"
               >
                 Cancel
               </Button>
               <Button
                 type="submit"
-                className="h-12 bg-[#DB4444] px-6 hover:bg-[#DB4444]/90"
+                className="h-12 bg-white text-black hover:text-white px-6 hover:bg-[#DB4444]"
               >
                 Save Changes
               </Button>

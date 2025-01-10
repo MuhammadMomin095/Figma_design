@@ -4,7 +4,11 @@ import { Product } from '../types/product'
 import { Button } from '@/components/ui/button'
 import { Eye, Heart, ShoppingCart, Trash2 } from 'lucide-react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
+import { useCart } from '../../context/CartContext';
 import Image from 'next/image'
+import { CartItem } from './../types/cart';
+
 
 interface ProductCardProps {
   product: Product
@@ -12,7 +16,28 @@ interface ProductCardProps {
   inWishlist?: boolean
 }
 
+
+
+
+
 export function ProductCard({ product, onRemoveFromWishlist, inWishlist }: ProductCardProps) {
+const router = useRouter(); 
+const { addToCart } = useCart()
+
+const handleAddToCart = () => {
+  const item: CartItem = {
+    id: product.id,
+    name: product.name,
+    price: product.price,
+    image: product.image,
+    quantity: 1, // Default quantity
+  };
+  addToCart(item);
+  router.push('/Cart'); // Navigate to cart page
+};
+
+
+
   return (
     <div className="group relative">
       {product.discount && (
@@ -75,12 +100,12 @@ export function ProductCard({ product, onRemoveFromWishlist, inWishlist }: Produ
           ))}
           <span className="text-sm bg-white text-gray-500">({product.reviews})</span>
         </div>
-        <Link href="Cart">
-        <Button className="w-full bg-black hover:text-black text-white mt-4">
+        
+        <Button onClick={handleAddToCart} className="w-full bg-black hover:text-black text-white mt-4">
           <ShoppingCart className="mr-2 h-4 text-white hover:text-black bg-black w-4" />
           Add To Cart
         </Button>
-        </Link>
+        
       </div>
     </div>
   )

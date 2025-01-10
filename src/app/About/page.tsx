@@ -5,9 +5,9 @@ import Footer from '../components/Footer';
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 const stats = [
-  { number: '10.5k', label: 'Sellers active our site' },
+  { number: '10k', label: 'Sellers active our site' },
   { number: '33k', label: 'Monthly Product Sale' },
-  { number: '45.5k', label: 'Customer active in our site' },
+  { number: '45k', label: 'Customer active in our site' },
   { number: '25k', label: 'Annual gross sale in our site' },
 ]
 

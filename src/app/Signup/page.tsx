@@ -107,7 +107,7 @@ export default function SignupPage() {
             className="h-12 w-full rounded-md border border-gray-200"
           >
             <Image
-              src="/google.svg"
+              src="/images/gg.png"
               alt="Google"
               width={24}
               height={24}

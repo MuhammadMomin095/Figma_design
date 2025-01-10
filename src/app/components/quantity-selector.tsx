@@ -19,7 +19,7 @@ export function QuantitySelector({ quantity, onQuantityChange }: QuantitySelecto
       >
         <ChevronUp className="h-4 w-4" />
       </Button>
-      <div className="w-10 text-center">{quantity.toString().padStart(2, '0')}</div>
+      <div className="w-10 text-center">{quantity?.toString().padStart(1, '0') || '00'}</div>
       <Button 
         variant="ghost" 
         size="icon" 
